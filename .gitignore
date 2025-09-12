@@ -1,0 +1,11 @@
+*.png
+output/
+__pycache__/
+build/
+dataset/10_0_0/
+dataset/18_1_6/train/
+dataset/18_1_6/split/
+dataset/18_1_6/test/CSiBE/
+dataset/18_1_6/test/linux-v0/
+dataset/18_1_6/test/poj104-v1/
+dataset/18_1_6/test/github-v0/
