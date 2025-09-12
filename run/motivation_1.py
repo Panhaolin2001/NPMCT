@@ -158,8 +158,8 @@ from collections import defaultdict
 import re
 import itertools
 
-LLVM_TOOLS_PATH = "/home/haolin/project/llvm_build/build-llvm-18.1.6/bin/"
-DATASET_PATH = "/home/haolin/project/paper7/NPMCT/dataset/18_1_6/test/cbench-v1/"
+LLVM_TOOLS_PATH = "../llvm_tools/"
+DATASET_PATH = "../dataset/18_1_6/test/cbench-v1/"
 
 def generate_skeletons(p_mod, p_cgscc, p_func, p_loop):
     """

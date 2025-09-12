@@ -841,9 +841,7 @@ def run_full_optimization_for_ir(ir_file_path, ga_config, sga_config, synergy_kb
 
 if __name__ == '__main__':
     GA_CONFIG = {
-        'llvm_path': "/home/haolin/project/llvm_build/build-llvm-18.1.6/bin/",
-        'lib_path': "/home/haolin/project/paper7/NPMCT/build/helper/feature/libProgramFeatureExtractor.so",
-        'safe_optimizer_path': "/home/haolin/project/paper7/NPMCT/build/helper/cpp/safe_optimizer",
+        'llvm_path': "../llvm_tools/",
         'population_size': 400, 'generations': 10, 'crossover_rate': 0.8,
         'mutation_rate': 0.9, 'tournament_size': 100, 'elitism': True,
         'num_threads': 64, 'max_pipeline_length': 200,
@@ -854,10 +852,10 @@ if __name__ == '__main__':
         'sga_generations': 20,
         'sga_mutation_rate': 0.9,
         'num_threads': 32,  # <-- Add missing num_threads configuration
-        'llvm_path': "/home/haolin/project/llvm_build/build-llvm-18.1.6/bin/"  # <-- Add missing llvm_path
+        'llvm_path': "../llvm_tools/"  # <-- Add missing llvm_path
     }
-    synergy_csv_path = "/home/haolin/project/paper7/synergy_results_by_type_2.csv"
-    dataset_path = "/home/haolin/project/paper7/NPMCT/dataset/18_1_6/test/npb-v0/"
+    synergy_csv_path = "./synergy_results_by_type_2.csv"
+    dataset_path = "../dataset/18_1_6/test/npb-v0/"
 
     pass_db = PassDatabase(Actions)
     synergy_knowledge_base, start_pass_weights = build_synergy_knowledge_base_from_csv(synergy_csv_path, pass_db)
