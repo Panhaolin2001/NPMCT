@@ -132,8 +132,8 @@ from common import get_instrcount,apply_pipeline_safely
 
 # def main():
 #     CONFIG = {
-#         "LLVM_PATH": "/home/haolin/project/llvm_build/build-llvm-18.1.6/bin/",
-#         "TEST_DIR": "/home/haolin/project/paper7/NPMCT/dataset/18_1_6/test/cbench-v1",
+#         "LLVM_PATH": "/home/xxx/project/llvm_build/build-llvm-18.1.6/bin/",
+#         "TEST_DIR": "/home/xxx/project/paper7/NPMCT/dataset/18_1_6/test/cbench-v1",
 #         "NUM_TESTS": 200,          # 生成多少组随机 pass 序列进行测试
 #         "NUM_PASSES": 16,           # 每个序列包含多少个 pass
 #         "NUM_WORKERS": 16          # 并行执行测试的工作线程数
